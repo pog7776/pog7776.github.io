@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="selection.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <div id="ConsoleDisplay"><h1>> <div id="selection"></div><div id="cursor">|</div></h1></div>
+
+            <!--<a href="Files/Jack Cooper - Resume - 2022.pdf" class="info_button" id="Resume" onmouseover="set_selection('selection', 'Resume.pdf')" onmouseleave="set_selection('selection', '')">Resume</a> -->
+            <div class="navbar">
+                <a href="Files/Jack Cooper - Resume - 2022.pdf" class="info_button" id="Resume" onmouseover="typeWriter('selection', 'Resume.pdf')" onmouseleave="clear_selection('selection')">Resume</a>
+                <a href="https://github.com/pog7776" class="info_button" id="github" onmouseover="typeWriter('selection', this.innerHTML)" onmouseleave="clear_selection('selection')">GitHub</a>
+                <a href="https://www.linkedin.com/in/jack--cooper/" class="info_button" id="linkedin" onmouseover="typeWriter('selection', this.innerHTML)" onmouseleave="clear_selection('selection')">LinkedIn</a>
+            </div>
+        </div>
+    </body>
+</html>
