@@ -42,10 +42,13 @@ a {
     color: black;
     display: inline-block;
     padding: 5px;
+    border-radius: 5px;
 }
 
 .info_button:hover {
     background-color: red;
+    animation: shadow 1s infinite;
+    animation-duration: 1s;
 }
 
 @keyframes cursor_blink2 {
@@ -60,4 +63,14 @@ a {
     30% { opacity: 100%; }
     60% { opacity: 100%; }
     100% { opacity: 0%; }
+}
+
+@keyframes shadow {
+    0% { box-shadow: 4px 4px red; }
+    16.6% { box-shadow: 4px 4px orange; }
+    33.26% { box-shadow: 4px 4px yellow; }
+    49.86% { box-shadow: 4px 4px green; }
+    66.46% { box-shadow: 4px 4px blue; }
+    83.06% { box-shadow: 4px 4px indigo; }
+    100% { box-shadow: 4px 4px violet; }
 }
