@@ -4,8 +4,14 @@ var ele = undefined; /* Element to affect */
 var default_speed = 20;
 var speed = 20; /* The speed/duration of the effect in milliseconds */
 var routune;
+var initial = true;
 
 function typeWriter(element, selection_string, custom_speed) {
+    if(initial) {
+        clear_selection(element);
+        initial = false;
+    }
+    
     // Setup references
     if(txt === undefined) { txt = selection_string; }
     if(ele === undefined) { ele = element; }
