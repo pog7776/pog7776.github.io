@@ -37,6 +37,7 @@ a {
 
 #selection {
     display: inline-block;
+    user-select: none;
 }
 
 #cursor {
