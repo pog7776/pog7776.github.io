@@ -17,10 +17,11 @@ body {
 .container {
     position: fixed;
     top: 45%;
-    left: 66%;
+    left: 52%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    width: 50%;
+    width: 20%;
+    white-space: nowrap;
 }
 
 #ConsoleDisplay {
@@ -63,6 +64,10 @@ a {
 .info_button:hover {
     background-color: red;
     /*animation: shadow 1s infinite;*/
+}
+
+.navbar {
+    
 }
 
 @keyframes cursor_blink2 {
