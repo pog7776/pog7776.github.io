@@ -1,13 +1,17 @@
 var i = 0;
 var txt = undefined; /* The text */
 var ele = undefined; /* Element to affect */
+var default_speed = 20;
 var speed = 20; /* The speed/duration of the effect in milliseconds */
 var routune;
 
-function typeWriter(element, selection_string) {
+function typeWriter(element, selection_string, custom_speed) {
     // Setup references
     if(txt === undefined) { txt = selection_string; }
     if(ele === undefined) { ele = element; }
+    if(custom_speed != undefined) {
+        speed = custom_speed;
+    }
 
     if (i < txt.length) {
         document.getElementById(ele).innerHTML += txt.charAt(i);
@@ -23,6 +27,7 @@ function clear_selection(element) {
     i = 0;
     txt = undefined;
     ele = undefined;
+    speed = default_speed;
     // Set to nothing
     document.getElementById(element).innerHTML = "";
 }
