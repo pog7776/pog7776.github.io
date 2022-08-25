@@ -9,9 +9,18 @@ body {
     font-family: 'consolas', Arial, sans-serif;
 }
 
-container {
+/* .container {
     padding-left: 10px;
     padding-top: 5px;
+} */
+
+.container {
+    position: fixed;
+    top: 45%;
+    left: 66%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 50%;
 }
 
 #ConsoleDisplay {
