@@ -33,7 +33,6 @@ a {
     background-color: rgb(51, 255, 0);
     color: rgb(51, 255, 0);
     animation: cursor_blink 1s infinite;
-    animation-duration: 1s;
     display: inline-block;
 }
 
@@ -47,8 +46,7 @@ a {
 
 .info_button:hover {
     background-color: red;
-    animation: shadow 1s infinite;
-    animation-duration: 1s;
+    /*animation: shadow 1s infinite;*/
 }
 
 @keyframes cursor_blink2 {
