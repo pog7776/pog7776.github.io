@@ -22,7 +22,34 @@ body {
     transform: translate(-50%, -50%);
     width: 20%;
     white-space: nowrap;
+
+    display: box;
+    box-align: center;
+    box-pack: center;
+
+    display: -moz-box;
+    -moz-box-pack: center;
+    -moz-box-align: center;
+    /*border: 0.05em solid red;*/
 }
+
+/*.container {
+    border: 0.05em solid red;
+    width: 50%;
+    /* Firefox 
+    display: -moz-box;
+    -moz-box-pack: center;
+    -moz-box-align: center;
+    /* Safari and Chrome 
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    /* W3C 
+    display: box;
+    box-pack: center;
+    box-align: center;
+    white-space: nowrap;
+}*/
 
 #ConsoleDisplay {
     display: inline;
@@ -68,7 +95,7 @@ a {
 }
 
 .navbar {
-    
+    display: inline-block;
 }
 
 @keyframes cursor_blink2 {

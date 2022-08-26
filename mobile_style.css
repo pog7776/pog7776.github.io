@@ -1,0 +1,11 @@
+@media (max-width: 1000px) {
+
+    body {
+        background: yellow;
+    }
+
+    .info_button:hover {
+        animation: shadow 1s infinite;
+    }
+
+}
