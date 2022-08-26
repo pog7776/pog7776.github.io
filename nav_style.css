@@ -1,0 +1,27 @@
+.container {
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid black;
+
+    position: fixed;
+    top: auto;
+    left: auto;
+    width: auto;
+    height: auto;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+
+    white-space: nowrap;
+}
+
+.fixedElement {
+    background-color: rgb(25, 25, 25);
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:100;
+}
