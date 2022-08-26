@@ -30,6 +30,7 @@ body {
     -moz-box-align: center;
     /*border: 0.05em solid red;
 } */
+
 .container {
     position: fixed;
     top: 40%;
@@ -47,24 +48,6 @@ body {
     /*border: 0.05em solid red;*/
 }
 
-/*.container {
-    border: 0.05em solid red;
-    width: 50%;
-    /* Firefox 
-    display: -moz-box;
-    -moz-box-pack: center;
-    -moz-box-align: center;
-    /* Safari and Chrome 
-    display: -webkit-box;
-    -webkit-box-pack: center;
-    -webkit-box-align: center;
-    /* W3C 
-    display: box;
-    box-pack: center;
-    box-align: center;
-    white-space: nowrap;
-}*/
-
 #ConsoleDisplay {
     display: inline;
     user-select: none;
@@ -72,7 +55,7 @@ body {
 }
 
 a {
-    text-decoration:none;  
+    text-decoration:none;
 }
 
 
@@ -104,11 +87,6 @@ a {
     background-size: 3px 3px;
     */
 }
-
-/*.info_button:hover {
-    background-color: red;
-    /*animation: shadow 1s infinite;
-}*/
 
 .info_button:hover {
     border: 0.05em solid #39ff14;
