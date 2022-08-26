@@ -32,15 +32,3 @@
     animation: cursor_blink 1s infinite;
     display: inline-block;
 }
-
-#nav_selection {
-    display: inline-block;
-    user-select: none;
-    white-space: nowrap;
-}
-
-#nav_ConsoleDisplay {
-    display: inline;
-    user-select: none;
-    vertical-align: bottom;
-}
