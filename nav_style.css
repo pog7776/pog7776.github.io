@@ -25,3 +25,22 @@
     width:100%;
     z-index:100;
 }
+
+.nav_cursor {
+    background-color: rgb(51, 255, 0);
+    color: rgb(51, 255, 0);
+    animation: cursor_blink 1s infinite;
+    display: inline-block;
+}
+
+#nav_selection {
+    display: inline-block;
+    user-select: none;
+    white-space: nowrap;
+}
+
+#nav_ConsoleDisplay {
+    display: inline;
+    user-select: none;
+    vertical-align: bottom;
+}
