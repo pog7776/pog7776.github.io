@@ -37,3 +37,13 @@ function clear_selection(element) {
     // Set to nothing
     document.getElementById(element).innerHTML = "";
 }
+
+function show_cursor(element) {
+    var x = document.getElementById(element);
+    x.style.display = "inline";
+}
+
+function hide_cursor(element) {
+    var x = document.getElementById(element);
+    x.style.display = "none";
+}

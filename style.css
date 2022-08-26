@@ -67,7 +67,7 @@ a {
     user-select: none;
 }
 
-#cursor {
+.cursor {
     background-color: rgb(51, 255, 0);
     color: rgb(51, 255, 0);
     animation: cursor_blink 1s infinite;
@@ -89,9 +89,15 @@ a {
     */
 }
 
-.info_button:hover {
+/*.info_button:hover {
     background-color: red;
-    /*animation: shadow 1s infinite;*/
+    /*animation: shadow 1s infinite;
+}*/
+
+.info_button:hover {
+    border: 0.05em solid #39ff14;
+    background-color: transparent;
+    color: #39ff14;
 }
 
 .navbar {

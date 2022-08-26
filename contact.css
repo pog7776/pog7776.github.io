@@ -1,0 +1,14 @@
+.cursor {
+    display: none;
+}
+
+.info_button {
+    border-radius: 2px;
+    background-color: #39ff14;
+}
+
+.info_button:hover {
+    border: 0.05em solid #39ff14;
+    background-color: transparent;
+    color: #39ff14;
+}
