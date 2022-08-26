@@ -7,13 +7,16 @@
         <link rel="stylesheet" href="mobile_style.css">
         <script src="selection.js"></script>
         <script src="nav_loading.js"></script>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
         <base target="_blank">
     </head>
 
     <body>
         <div id="nav-placeholder"></div>
         <script>
-            load("nav.html", document.getElementById("nav-placeholder"));
-        </script>
+            $(function(){
+              $("#nav-placeholder").load("nav.html");
+            });
+            </script>
     </body>
 </html>
