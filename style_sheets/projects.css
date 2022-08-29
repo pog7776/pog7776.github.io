@@ -106,10 +106,6 @@
     margin-top: 20px;
 }
 
-#electric_vr h4 {
-    margin-top: 50px;
-}
-
 @keyframes project_shadow {
     0% { box-shadow: 0px 0px 30px 5px red; }
     16.6% { box-shadow: 0px 0px 30px 5px orange; }
