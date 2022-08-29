@@ -19,10 +19,12 @@ function typeWriter(element, selection_string, custom_speed) {
         speed = custom_speed;
     }
 
-    if (i < txt.length) {
-        document.getElementById(ele).innerHTML += txt.charAt(i);
-        i++;
-        routine = setTimeout(typeWriter, speed);
+    if(txt !== undefined && ele !== undefined) {
+        if (i < txt.length) {
+            document.getElementById(ele).innerHTML += txt.charAt(i);
+            i++;
+            routine = setTimeout(typeWriter, speed);
+        }
     }
 }
 
