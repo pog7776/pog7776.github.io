@@ -38,9 +38,9 @@ function clear_selection(element) {
     document.getElementById(element).innerHTML = "";
 }
 
-async function SetSelectionToTitle(delay) {
+async function SetSelectionToTitle(delay, element) {
     var title = document.getElementsByTagName("title")[0].innerHTML;
     await new Promise(resolve => setTimeout(resolve, delay));
     console.log('after 1 second');
-    typeWriter('selection', title);
+    typeWriter(element, title);
 }
