@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="style_sheets/projects.css">
         <link rel="stylesheet" href="style_sheets/mobile_style.css">
         <script type="text/javascript" src="selection.js"></script>
+        <script type="text/javascript" src="/javascript/projects.js"></script>
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.js"></script>
         <base target="_blank">
         <!--<meta http-equiv="Refresh" content="0; url='wip.html'" />-->
@@ -23,10 +24,9 @@
         <div class="project_list">
             <h1 class="header" id="projects_header"">[Projects]</h1>
 
-            <div id="alchemist" class="project_entry">
-                <div id="project_left" >
+            <div id="alchemist" class="project_entry" class="project_entry" onclick="expandProject(this.id)">
+                <div class="project_left" >
                     <h2 class="header">> The Alchemist</h2>
-                    <br>
                     <h3>2019-2021</h3>
                     <p>
                         The alchemist was game :]
@@ -34,8 +34,8 @@
                 </div>
             </div>
 
-            <div id="unreal_game" class="project_entry">
-                <div id="project_left" >
+            <div id="unreal_game" class="project_entry" class="project_entry" onclick="expandProject(this.id)">
+                <div class="project_left" >
                     <h2 class="header">> Unreal Engine 5 Project</h2>
                     <h3>2022 - Present</h3>
                     <p>
@@ -44,41 +44,48 @@
                 </div>
             </div>
 
-            <div id="electric_vr" class="project_entry">
-                <div id="project_left" >
+            <div id="electric_vr" class="project_entry" onclick="expandProject(this.id)">
+                <div class="project_left" >
                     <h2 class="header">> VR Electrocution Experience Research Paper</h2>
                     <h3>2020</h3>
                     <p>
                         This was a research paper exploring the impact real world consequences had on a players experience in VR.
                     </p>
-                    <a href="/Files/Exploring the impact of real-world consequence on a player's experience in Virtual Reality - Jack Cooper.pdf" target="_blank" class="info_button" id="paper"> Download Paper </a>
-                    <h4>Abstract</h4>
-                    <p id="vr_abstract">
-                        This paper explores the impact that high consequence
-                        feedback has on a player in VR, and the behavioural
-                        changes of the player while playing a game with and
-                        without the feedback. Virtual Reality being a highly
-                        immersive system, it is an appropriate format to test this
-                        kind of feedback and its effects. The paper outlines the
-                        process taken to develop a system to provide high
-                        consequence feedback, and interfacing that with a VR
-                        game developed to test the system. The work undertaken
-                        in this paper hopes to outline the effectiveness and
-                        implications consequences have on the experience of
-                        video games.
-                    </p>
+                    <span class="expand_content">
+                        <a href="/Files/Exploring the impact of real-world consequence on a player's experience in Virtual Reality - Jack Cooper.pdf" target="_blank" class="info_button" id="paper"> Download Paper </a>
+                        <h4>Abstract</h4>
+                        <p id="vr_abstract">
+                            This paper explores the impact that high consequence
+                            feedback has on a player in VR, and the behavioural
+                            changes of the player while playing a game with and
+                            without the feedback. Virtual Reality being a highly
+                            immersive system, it is an appropriate format to test this
+                            kind of feedback and its effects. The paper outlines the
+                            process taken to develop a system to provide high
+                            consequence feedback, and interfacing that with a VR
+                            game developed to test the system. The work undertaken
+                            in this paper hopes to outline the effectiveness and
+                            implications consequences have on the experience of
+                            video games.
+                        </p>
+                    </span>
                 </div>
 
-                <div id="project_right">
-                    <img src="/images/projects/vr_elec/strap.jpg" alt="Electric collar strap" class="project_image" id="collar">
-                    <img src="/images/projects/vr_elec/in_use.png" alt="Zap in use" class="project_image" id="in_use_image">
-                    <br>
-                    <img src="/images/projects/vr_elec/board.jpg" alt="Collar controller" class="project_image" id="project_board">
+                <div class="project_right">
+                    <span class="preview_content">
+                        <img src="/images/projects/vr_elec/board_preview.png" alt="VR Preview">
+                    </span>
+                    <span class="expand_content">
+                        <img src="/images/projects/vr_elec/strap.jpg" alt="Electric collar strap" class="project_image" id="collar">
+                        <img src="/images/projects/vr_elec/in_use.png" alt="Zap in use" class="project_image" id="in_use_image">
+                        <br>
+                        <img src="/images/projects/vr_elec/board.jpg" alt="Collar controller" class="project_image" id="project_board">
+                    </span>
                 </div>
             </div>
 
-            <div id="stupid_bot" class="project_entry">
-                <div id="project_left" >
+            <div id="stupid_bot" class="project_entry" class="project_entry" onclick="expandProject(this.id)">
+                <div class="project_left" >
                     <h2 class="header">> Funny little Discord bot</h2>
                     <h3>2022</h3>
                     <p>

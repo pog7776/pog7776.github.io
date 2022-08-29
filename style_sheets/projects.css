@@ -28,6 +28,13 @@
     padding: 10px;
     transition: all 0.25s ease;
     /* box-shadow: 0px 0px 15px 1px rgb(184, 35, 35); */
+
+    overflow: hidden;
+
+    /* height: 125px; */
+
+    /* transition: height .5s;
+    height: 175px; */
 }
 
 .project_entry:hover {
@@ -36,11 +43,35 @@
     /* animation: project_shadow 5s infinite; */
 }
 
+.expand_hint {
+    display: none;
+    transition: all 0.5s ease;
+}
+
+.project_entry:hover .expand_hint {
+    display: block;
+}
+
+.expand_content {
+    display: none;
+}
+
+.preview_content {
+    float: right;
+    display: initial;
+}
+
+.preview_content img {
+    height: 250px;
+    -webkit-mask-image:-webkit-gradient(linear, right top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+}
+
 .project_entry p {
     color: white;
 }
 
-#project_left {
+.project_left {
     max-width: 49%;
     max-height: 100%;
     float: left;
@@ -48,10 +79,10 @@
     /* border: 0.05em solid red; */
 }
 
-#project_right {
-    max-width: 49%;
+.project_right {
+    max-width: 45%;
     margin-left: auto; 
-    margin-right: 50px;
+    margin-right: 0px;
 
     /* border: 0.05em solid red; */
 }
@@ -60,6 +91,7 @@
     max-width: 75%;
     align-self: right;
     margin: 5px;
+    margin-right: 50px;
 
     border: 0.05em solid rgba(51, 255, 0, 0.5);
     border-radius: 40px 0px 40px 0px;
@@ -82,7 +114,7 @@
 }
 
 #electric_vr h4 {
-    margin-top: 20%;
+    margin-top: 50px;
 }
 
 @keyframes project_shadow {
