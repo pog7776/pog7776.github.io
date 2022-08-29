@@ -1,0 +1,13 @@
+.project_list {
+    margin-top: 150px;
+}
+
+.header {
+    color: #C19C04;
+}
+
+.project_entry {
+    /*border: 0.05em solid red;*/
+    margin-bottom: 50px;
+    background-color: rgb(23, 23, 23);
+}

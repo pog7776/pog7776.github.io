@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'consolas';
-    src: url('Fonts/Consolas-Font/CONSOLA.TTF');
+    src: url('../Fonts/Consolas-Font/CONSOLA.TTF');
 }
 
 body {
@@ -96,6 +96,10 @@ a {
 
 .navbar {
     display: inline-block;
+}
+
+.background-blur {
+    backdrop-filter: blur(10px);
 }
 
 @keyframes cursor_blink2 {

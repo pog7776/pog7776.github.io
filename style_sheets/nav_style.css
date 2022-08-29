@@ -1,12 +1,13 @@
 .nav_container {
+    background-color: rgba(25, 25, 25, 0);
     padding-left: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
     border-bottom: 2px solid black;
 
     position: fixed;
-    top: auto;
-    left: auto;
+    top: 0;
+    left: 0;
     width: auto;
     height: auto;
     -webkit-transform: none;
@@ -19,7 +20,6 @@
 }
 
 .fixedElement {
-    background-color: rgb(25, 25, 25);
     position:fixed;
     top:0;
     width:100%;
