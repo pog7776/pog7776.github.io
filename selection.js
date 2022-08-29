@@ -3,7 +3,7 @@ var txt = undefined; /* The text */
 var ele = undefined; /* Element to affect */
 var default_speed = 20;
 var speed = 20; /* The speed/duration of the effect in milliseconds */
-var routune;
+var routine;
 var initial = true;
 
 function typeWriter(element, selection_string, custom_speed) {
@@ -22,13 +22,16 @@ function typeWriter(element, selection_string, custom_speed) {
     if (i < txt.length) {
         document.getElementById(ele).innerHTML += txt.charAt(i);
         i++;
-        routune = setTimeout(typeWriter, speed);
+        routine = setTimeout(typeWriter, speed);
     }
 }
 
 function clear_selection(element) {
     // Stop the typing animation
-    clearTimeout(routune);
+    if(routine != undefined) {
+        clearTimeout(routine);
+    }
+    
     // Reset animation
     i = 0;
     txt = undefined;
