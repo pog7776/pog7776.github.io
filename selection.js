@@ -37,3 +37,10 @@ function clear_selection(element) {
     // Set to nothing
     document.getElementById(element).innerHTML = "";
 }
+
+async function SetSelectionToTitle(delay) {
+    var title = document.getElementsByTagName("title")[0].innerHTML;
+    await new Promise(resolve => setTimeout(resolve, delay));
+    console.log('after 1 second');
+    typeWriter('selection', title);
+}
