@@ -6,6 +6,8 @@ function expandProject(element_id) {
     if(project.style.maxHeight != (250 + getTallestChild(element_id)) + "px") {
         project.style.maxHeight = (250 + getTallestChild(element_id)) + "px";
         //setTimeout(function(){project.scrollIntoView(true);}, 50);
+        //project.scrollIntoView(true);
+        setTimeout(function(){scrollToProject(project);}, 250);
     } else {
         project.style.maxHeight = "250px";
     }
@@ -51,4 +53,13 @@ function getTallestChild(element_id){
     }
 
     return tallest;
+}
+
+function scrollToProject(element) {
+    var navbar = document.getElementById("navbar");
+    const y = (element.getBoundingClientRect().top + window.scrollY) - navbar.scrollHeight - 30;
+    window.scroll({
+    top: y,
+    behavior: 'smooth'
+    });
 }
