@@ -21,7 +21,6 @@
 
     margin-left: 25%;
     margin-right: 25%;
-    /* min-width: 1000px; */
 
     display: block;
 
@@ -37,6 +36,9 @@
     /*height: 175px; */
 
     max-height: 250px;
+    min-height: 250px;
+
+    min-width: 750px;
 }
 
 .project_entry:hover {
