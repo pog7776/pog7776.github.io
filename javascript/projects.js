@@ -43,12 +43,10 @@ function getTallestChild(element_id){
     var tallest = 0;
 
     if(project_left[0].scrollHeight > tallest) {
-        console.log("left: " + project_left[0].scrollHeight);
         tallest = project_left[0].scrollHeight;
     }
 
     if(project_right[0].scrollHeight > tallest) {
-        console.log("right: " + project_right[0].scrollHeight);
         tallest = project_right[0].scrollHeight;
     }
 
