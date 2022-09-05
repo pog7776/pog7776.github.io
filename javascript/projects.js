@@ -1,3 +1,4 @@
+/* exported expandProject */
 function expandProject(element_id) {
     var project = document.getElementById(element_id);
     var expand_elements = project.querySelectorAll(".expand_content");
