@@ -94,6 +94,24 @@ a {
     color: #39ff14;
 }
 
+#github:hover {
+    border: 0.05em solid #333;
+    background-color: #333;
+    color: white;
+}
+
+#linkedin:hover {
+    border: 0.05em solid #0072b1;
+    background-color: #0072b1;
+    color: white;
+}
+
+#discord:hover {
+    border: 0.05em solid #5865F2;
+    background-color: #5865F2;
+    color: white;
+}
+
 .navbar {
     display: inline-block;
 }
