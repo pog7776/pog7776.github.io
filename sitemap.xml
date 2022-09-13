@@ -9,28 +9,28 @@
 
 <url>
   <loc>https://jackcooper.dev/</loc>
-  <lastmod>2022-08-28T10:15:07+00:00</lastmod>
+  <lastmod>2022-09-05T05:02:10+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://jackcooper.dev/Files/Jack%20Cooper%20-%20Resume%20-%202022.pdf</loc>
-  <lastmod>2022-08-28T10:15:07+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://jackcooper.dev/wip.html</loc>
-  <lastmod>2022-08-28T10:15:07+00:00</lastmod>
+  <loc>https://jackcooper.dev/projects.html</loc>
+  <lastmod>2022-09-05T05:02:10+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://jackcooper.dev/contact.html</loc>
-  <lastmod>2022-08-28T10:15:07+00:00</lastmod>
+  <lastmod>2022-09-05T05:02:10+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://jackcooper.dev/projects.html</loc>
-  <lastmod>2022-08-28T10:15:07+00:00</lastmod>
+  <loc>https://jackcooper.dev/Files/Jack%20Cooper%20-%20Resume%20-%202022.pdf</loc>
+  <lastmod>2022-09-05T05:02:10+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jackcooper.dev/Files/Exploring%20the%20impact%20of%20real-world%20consequence%20on%20a%20player&#39;s%20experience%20in%20Virtual%20Reality%20-%20Jack%20Cooper.pdf</loc>
+  <lastmod>2022-09-05T05:02:10+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 
 
