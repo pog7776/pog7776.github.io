@@ -1,1 +1,2 @@
-[![CodeFactor](https://www.codefactor.io/repository/github/pog7776/pog7776.github.io/badge)](https://www.codefactor.io/repository/github/pog7776/pog7776.github.io)
+# [JackCooper.dev](https://jackcooper.dev)
+[![CodeFactor](https://www.codefactor.io/repository/github/pog7776/pog7776.github.io/badge)](https://www.codefactor.io/repository/github/pog7776/pog7776.github.io) [![wakatime](https://wakatime.com/badge/user/c9a563a1-4186-4982-8db6-6ede37b07182/project/40ac4858-3151-4c50-bf83-e77c9b1b3491.svg)](https://wakatime.com/badge/user/c9a563a1-4186-4982-8db6-6ede37b07182/project/40ac4858-3151-4c50-bf83-e77c9b1b3491)
