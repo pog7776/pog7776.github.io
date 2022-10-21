@@ -112,6 +112,10 @@ a {
     color: white;
 }
 
+#quote:hover {
+    animation: shadow 1s infinite;
+}
+
 .navbar {
     display: inline-block;
 }

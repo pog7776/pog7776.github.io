@@ -48,3 +48,23 @@ async function SetSelectionToTitle(delay, element) {
     await new Promise(resolve => setTimeout(resolve, delay));
     typeWriter(element, title);
 }
+
+async function SetSelectionToQuote(element) {
+    clear_selection(element);
+    // var quote = await GetQuote();
+    // typeWriter(element, quote);
+    // GetQuote()
+    // .then(data => { typeWriter(element, data) })
+    // .then(data => { console.log(data) });
+    //typeWriter(element, await GetQuote().then(data => console.log(data)));
+
+    // await new Promise(async resolve => await GetQuote()
+    // .then(resolve => typeWriter(element, resolve)));
+}
+
+async function GetQuote() {
+    return await fetch("https://dumbquote.herokuapp.com/api/quote")
+        .then(data => data.text())
+        //.then(data => console.log(data))
+        .then(data => { return data });
+}
