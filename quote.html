@@ -34,15 +34,12 @@
         
         <div class="flex-container">
             <div class="quote">
-                <h1 id="quoteContainer">...</h1>
+                <h1><span id="quoteContainer">...</span><span class="cursor" style="user-select: none;">!</span></h1>
                 <script>
                     fetch("https://dumbquote.herokuapp.com/api/quote").then(data => data.text())
                     .then(data => {
                         var container = document.getElementById("quoteContainer");
-                        var cursor = "<div class=\"cursor\">!</div>";
-                        container.innerHTML = data + cursor;
-                        //container.innerHTML.replace("\n", cursor + "\n");
-                        
+                        typeWriter("quoteContainer", data);                        
                     }).then(console.log("Quote loaded " + data));
                 </script>
             </div>
