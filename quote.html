@@ -4,7 +4,7 @@
         <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
         <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="style_sheets/style.css">
-        <link rel="stylesheet" href="style_sheets/projects.css">
+        <link rel="stylesheet" href="style_sheets/quote.css">
         <link rel="stylesheet" href="style_sheets/mobile_style.css">
         <script type="text/javascript" src="selection.js"></script>
         <script type="text/javascript" src="/javascript/projects.js"></script>
@@ -31,15 +31,25 @@
             });
         </script>
         
-        <div class="container">
-            <div class="quote" id="quoteContainer">
+        <div class="flex-container">
+            <div class="quote">
+                <h1 id="quoteContainer">...</h1>
                 <script>
-                    fetch("https://dumbquote.herokuapp.com/api/quote").then(data => data.text()).then(data => {
+                    fetch("https://dumbquote.herokuapp.com/api/quote").then(data => data.text())
+                    .then(data => {
                         document.getElementById("quoteContainer").innerHTML = data;
                     }).then(console.log("Quote loaded " + data));
                 </script>
             </div>
         </div>
 
+        <div class="githubButton">
+            <a href="https://github.com/pog7776/DumbQuoteAPI">
+                <button type="button">
+                    <img src="images/github.png" alt="Github" width="30" height="30">
+                    <span>Github</span>
+                </button>
+            </a>
+        </div>
     </body>
 </html>

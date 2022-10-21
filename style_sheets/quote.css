@@ -1,0 +1,46 @@
+.quote {
+    position: fixed;
+    top: 40%;
+    width: 80%;
+    text-align: center;
+    white-space: pre-line;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.githubButton {
+    position: absolute;
+    bottom: 2%;
+    left: 1%;
+
+    /* vertical-align: middle; */
+    height: 30px;
+    text-align: center;
+}
+
+.githubButton button {
+    background-color: #333;
+    color: white;
+    border: 0.05em solid #333;
+    border-radius: 5px;
+    
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.githubButton button:hover {
+    background-color: silver;
+    color: #333;
+    border: 0.05em solid #333;
+}
+
+.githubButton span {
+    padding-left: 8px;
+}
