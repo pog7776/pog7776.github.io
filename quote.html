@@ -35,8 +35,8 @@
             <div class="quote" id="quoteContainer">
                 <script>
                     fetch("https://dumbquote.herokuapp.com/api/quote").then(data => {
-                        document.getElementById("quoteContainer").innerHTML = data.quote;
-                    });
+                        document.getElementById("quoteContainer").innerHTML = data;
+                    }).then(console.log("Quote loaded " + data));
                 </script>
             </div>
         </div>
