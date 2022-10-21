@@ -34,7 +34,7 @@
         <div class="container">
             <div class="quote" id="quoteContainer">
                 <script>
-                    fetch("https://dumbquote.herokuapp.com/api/quote").then(response => response.json()).then(data => {
+                    fetch("https://dumbquote.herokuapp.com/api/quote").then(data => {
                         document.getElementById("quoteContainer").innerHTML = data.quote;
                     });
                 </script>
