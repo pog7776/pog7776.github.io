@@ -21,6 +21,7 @@
         <a href="quote.html" target="_self" class="info_button" id="quote" onmouseover="
             // Quote
             ( async () => {
+                typeWriter('selection', '...');
                 GetQuote().then(quote => {
                     clear_selection('selection');
                     typeWriter('selection', quote, 1);
