@@ -38,7 +38,11 @@
                 <script>
                     fetch("https://dumbquote.herokuapp.com/api/quote").then(data => data.text())
                     .then(data => {
-                        document.getElementById("quoteContainer").innerHTML = data;
+                        var container = document.getElementById("quoteContainer");
+                        var cursor = "<div class=\"cursor\">!</div>";
+                        container.innerHTML = data + cursor;
+                        //container.innerHTML.replace("\n", cursor + "\n");
+                        
                     }).then(console.log("Quote loaded " + data));
                 </script>
             </div>
