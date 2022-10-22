@@ -3,28 +3,6 @@ var speed = 20; /* The speed/duration of the effect in milliseconds */
 
 var typeJobs = new Map();
 
-function typeWriterOld(element, selection_string, custom_speed) {
-    if(initial) {
-        clear_selection(element);
-        initial = false;
-    }
-    
-    // Setup references
-    if(txt === undefined) { txt = selection_string; }
-    if(ele === undefined) { ele = element; }
-    if(custom_speed != undefined) {
-        speed = custom_speed;
-    }
-
-    if(txt !== undefined && ele !== undefined) {
-        if (i < txt.length) {
-            document.getElementById(ele).innerHTML += txt.charAt(i);
-            i++;
-            routine = setTimeout(typeWriter, speed);
-        }
-    }
-}
-
 async function typeWriter(element, selection_string, custom_speed) {
     var elementObj = document.getElementById(element);
     var txt = selection_string;
@@ -68,4 +46,27 @@ async function GetQuote() {
         .then(data => data.text())
         //.then(data => console.log(data))
         .then(data => { return data });
+}
+
+
+function typeWriterOld(element, selection_string, custom_speed) {
+    if(initial) {
+        clear_selection(element);
+        initial = false;
+    }
+    
+    // Setup references
+    if(txt === undefined) { txt = selection_string; }
+    if(ele === undefined) { ele = element; }
+    if(custom_speed != undefined) {
+        speed = custom_speed;
+    }
+
+    if(txt !== undefined && ele !== undefined) {
+        if (i < txt.length) {
+            document.getElementById(ele).innerHTML += txt.charAt(i);
+            i++;
+            routine = setTimeout(typeWriter, speed);
+        }
+    }
 }
