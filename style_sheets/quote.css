@@ -12,7 +12,7 @@
     align-items: center;
 }
 
-.githubButton {
+.socialButton {
     /* position: absolute;
     bottom: 2%;
     left: 1%; */
@@ -23,7 +23,7 @@
     padding-right: 8px;
 }
 
-.githubButton button {
+.socialButton button {
     background-color: #333;
     color: white;
     border: 0.05em solid #333;
@@ -36,13 +36,13 @@
     justify-content: space-between;
 }
 
-.githubButton button:hover {
+.socialButton button:hover {
     background-color: silver;
     color: #333;
     border: 0.05em solid #333;
 }
 
-.githubButton span {
+.socialButton span {
     padding-left: 8px;
 }
 
