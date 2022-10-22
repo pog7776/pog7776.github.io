@@ -39,8 +39,9 @@
                     fetch("https://dumbquote.herokuapp.com/api/quote").then(data => data.text())
                     .then(data => {
                         var container = document.getElementById("quoteContainer");
-                        typeWriter("quoteContainer", data);                        
-                    }).then(console.log("Quote loaded " + data));
+                        console.log(data);
+                        typeWriter("quoteContainer", data);                    
+                    });
                 </script>
             </div>
         </div>
