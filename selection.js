@@ -49,24 +49,24 @@ async function GetQuote() {
 }
 
 
-function typeWriterOld(element, selection_string, custom_speed) {
-    if(initial) {
-        clear_selection(element);
-        initial = false;
-    }
+// function typeWriterOld(element, selection_string, custom_speed) {
+//     if(initial) {
+//         clear_selection(element);
+//         initial = false;
+//     }
     
-    // Setup references
-    if(txt === undefined) { txt = selection_string; }
-    if(ele === undefined) { ele = element; }
-    if(custom_speed != undefined) {
-        speed = custom_speed;
-    }
+//     // Setup references
+//     if(txt === undefined) { txt = selection_string; }
+//     if(ele === undefined) { ele = element; }
+//     if(custom_speed != undefined) {
+//         speed = custom_speed;
+//     }
 
-    if(txt !== undefined && ele !== undefined) {
-        if (i < txt.length) {
-            document.getElementById(ele).innerHTML += txt.charAt(i);
-            i++;
-            routine = setTimeout(typeWriter, speed);
-        }
-    }
-}
+//     if(txt !== undefined && ele !== undefined) {
+//         if (i < txt.length) {
+//             document.getElementById(ele).innerHTML += txt.charAt(i);
+//             i++;
+//             routine = setTimeout(typeWriter, speed);
+//         }
+//     }
+// }
