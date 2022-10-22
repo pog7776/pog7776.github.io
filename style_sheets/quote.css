@@ -13,13 +13,14 @@
 }
 
 .githubButton {
-    position: absolute;
+    /* position: absolute;
     bottom: 2%;
-    left: 1%;
+    left: 1%; */
 
     /* vertical-align: middle; */
     height: 30px;
     text-align: center;
+    padding-right: 8px;
 }
 
 .githubButton button {
@@ -43,4 +44,11 @@
 
 .githubButton span {
     padding-left: 8px;
+}
+
+.social_container {
+    display: flex;
+    position: absolute;
+    bottom: 2%;
+    left: 1%;
 }
