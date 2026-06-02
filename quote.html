@@ -36,12 +36,13 @@
             <div class="quote">
                 <h1><span id="quoteContainer">...</span><span class="cursor" style="user-select: none;">!</span></h1>
                 <script>
-                    fetch("https://dumbquote.herokuapp.com/api/quote").then(data => data.text())
-                    .then(data => {
-                        var container = document.getElementById("quoteContainer");
-                        console.log(data);
-                        typeWriter("quoteContainer", data);                    
-                    });
+                    // fetch("https://dumbquote.herokuapp.com/api/quote").then(data => data.text())
+                    // .then(data => {
+                    //     var container = document.getElementById("quoteContainer");
+                    //     console.log(data);
+                    //     typeWriter("quoteContainer", data);                    
+                    // });
+                    typeWriter("quoteContainer", "This doesn't work anymore :(");
                 </script>
             </div>
         </div>
