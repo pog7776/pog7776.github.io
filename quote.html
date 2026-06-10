@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>Quote</title>
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+        <meta property="og:image" content="images/favicon.ico" />
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="style_sheets/style.css">
+        <link rel="stylesheet" href="style_sheets/quote.css">
+        <link rel="stylesheet" href="style_sheets/mobile_style.css">
+        <script type="text/javascript" src="selection.js"></script>
+        <script type="text/javascript" src="/javascript/projects.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <base target="_blank">
+        <!--<meta http-equiv="Refresh" content="0; url='wip.html'" />-->
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-5RXK7JBGF6"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-5RXK7JBGF6', { 'anonymize_ip': true });
+        </script>
+    </head>
+
+    <body>
+        <div id="nav-placeholder"></div>
+        <script>
+            $(function(){
+              $("#nav-placeholder").load("nav.html");
+            });
+        </script>
+        
+        <div class="flex-container">
+            <div class="quote">
+                <h1><span id="quoteContainer">...</span><span class="cursor" style="user-select: none;">!</span></h1>
+                <script>
+                    // fetch("https://dumbquote.herokuapp.com/api/quote").then(data => data.text())
+                    // .then(data => {
+                    //     var container = document.getElementById("quoteContainer");
+                    //     console.log(data);
+                    //     typeWriter("quoteContainer", data);                    
+                    // });
+                    typeWriter("quoteContainer", "This doesn't work anymore :(");
+                </script>
+            </div>
+        </div>
+
+        <div class="social_container" id="socials">
+            <div class="socialButton">
+                <a href="https://github.com/pog7776/DumbQuoteAPI">
+                    <button type="button">
+                        <img src="images/github.png" alt="Github" width="30" height="30">
+                        <span>Github</span>
+                    </button>
+                </a>
+            </div>
+
+            <div class="socialButton">
+                <a href="https://twitter.com/QuoteRemixBot">
+                    <button type="button">
+                        <img src="images/twitter.webp" alt="Twitter" width="30" height="30">
+                        <span>@QuoteRemixBot</span>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </body>
+</html>

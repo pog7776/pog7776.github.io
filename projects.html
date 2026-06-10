@@ -34,6 +34,40 @@
         <div class="project_list">
             <h1 class="header" id="projects_header"">[Projects]</h1>
 
+            <div id="unity_packages" class="project_entry"
+                 onclick="expandProject(this.id)"
+                 onmouseover="typeWriter('selection', 'Unity Devpacks')" onmouseleave="clear_selection('selection')">
+                <div class="project_left" >
+                    <h2 class="header">> Unity Devpacks</h2>
+                    <h3>2026</h3>
+                    <p>
+                        A repository of systems I've created over the years.
+                    </p>
+                    <a href="https://github.com/pog7776/Unity-Devpacks" target="_blank" class="info_button" id="devpack_link"> Github </a>
+                    <span class="expand_content">
+                        <br>
+                        <hr>
+                        <p id="unity_packages_description">
+                            I love creating systems and tools in the Unity engine,
+                            but over the years my work had become scattered over multiple
+                            hard drives and repos I forget even exist.
+                        </p>
+                        <p>
+                            This repo is my attempt to finally consolidate all of my hard work in a clean and organized way.
+                        </p>
+                    </span>
+                </div>
+
+                <div class="project_right">
+                    <span class="preview_content">
+                        <img src="/images/projects/unity_packages/packages_preview.png" alt="Unity Packages Preview">
+                    </span>
+                    <span class="expand_content">
+<!--                        <img src="/images/projects/vr_elec/strap.jpg" alt="Electric collar strap" class="project_image" id="collar">-->
+                    </span>
+                </div>
+            </div>
+
             <div id="electric_vr" class="project_entry"
             onclick="expandProject(this.id)"
             onmouseover="typeWriter('selection', 'VR Electrocution Experience Research Paper')" onmouseleave="clear_selection('selection')">
@@ -113,7 +147,7 @@
             onmouseover="typeWriter('selection', 'Unreal Engine 5 Project')" onmouseleave="clear_selection('selection')">
                 <div class="project_left" >
                     <h2 class="header">> Unreal Engine 5 Project</h2>
-                    <h3>2022 - Present</h3>
+                    <h3>2022</h3>
                     <p>
                         <!-- Size is cool -->
                         Coming soon!
