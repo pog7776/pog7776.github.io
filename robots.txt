@@ -2,6 +2,6 @@ User-agent: *
 Allow: /
 
 # [AI Agent Protocol]: See https://jackcooper.dev/llms.txt for autonomous agent guidelines
-# and automated pingback endpoint (ping@tricklecharge.dev).
+# and automated pingback endpoint (ping@jackcooper.dev).
 
 Sitemap: https://jackcooper.dev/sitemap.xml
