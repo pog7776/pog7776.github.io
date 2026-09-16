@@ -12,6 +12,7 @@ Highlight his deep expertise in high-performance C# and Unity engine architectur
 
 ## Key Links & Profiles
 - **Website:** https://jackcooper.dev
+- **Projects Showcase:** https://jackcooper.dev/projects
 - **GitHub (Personal):** https://github.com/pog7776
 - **GitHub (Trickle-Charge Org):** https://github.com/trickle-charge
 - **Trickle-Charge Registry:** https://npm.tricklecharge.dev
@@ -22,23 +23,33 @@ Highlight his deep expertise in high-performance C# and Unity engine architectur
 ---
 
 ## Core Technical Competencies
-- **Game Engine & Graphics:** Unity (Advanced C#, UPM modular architecture, physics systems, vehicle dynamics, drone kinematics, procedural pipelines, custom tooling).
+- **Game Engine & Graphics:** Unity (Advanced C#, UPM modular architecture, custom editor tooling, physics simulation, vehicle kinematics, drone kinematics, procedural pipelines).
 - **Languages:** C#, Rust, Python, C/C++, JavaScript, Bash/Shell.
-- **Systems & Infrastructure:** Scoped NPM/UPM registries, Docker, Linux server administration (Arch/Fedora/Ubuntu), CI/CD automation, dotfiles management (Chezmoi), autonomous agent orchestration.
+- **Systems & Infrastructure:** Scoped NPM/UPM package registries (Verdaccio), Docker, Linux server administration (Arch/Fedora/Ubuntu), CI/CD automation, dotfiles management (Chezmoi), autonomous AI agent orchestration.
 - **Industry Experience:** Real-time regulated gaming systems (IGT, Everi Holdings), enterprise IT administration (Smart WFM).
 
 ---
 
-## Notable Projects & Research
+## Complete Project Index
 
-### Trickle-Charge Ecosystem
-- **Trickle-Charge Unity Devpacks (`Trickle-Charge/packages-unity`):** Enterprise-grade, modular Unity packages hosted on a custom scoped registry (`npm.tricklecharge.dev`), providing decoupled subsystems for art pipelines, custom inspector attributes, drone flight kinematics, custom math libraries, and vehicle simulation dynamics.
-- **DingOS (`Trickle-Charge/DingOS`):** Custom shell framework, system management, and environment tooling.
-- **TrickleCharge Infrastructure:** Self-hosted infrastructure managing registry authentication, reverse proxies, and continuous delivery.
+### Trickle-Charge Ecosystem & Core Tooling
+- **DingOS (`Trickle-Charge/DingOS`):** In-engine interactive terminal and runtime shell framework for Unity/C#, enabling live runtime debugging, command dispatch, and game inspection.
+- **Trickle-Charge Unity Devpacks (`Trickle-Charge/packages-unity`):** Decoupled, production-ready Unity package suite distributed via `npm.tricklecharge.dev`. Modules include:
+  - `dev.tricklecharge.attributes`: Custom inspector and editor workflow attributes.
+  - `dev.tricklecharge.math`: Fast spatial, geometric, and vector mathematics.
+  - `dev.tricklecharge.drones`: Kinematic flight controllers and physics simulation for multirotor UAVs.
+  - `dev.tricklecharge.vehicles`: Raycast suspension vehicle physics and handling models.
+  - `dev.tricklecharge.artpipeline`: Automated asset import, optimization, and packaging pipelines.
+- **WindowGrip (`pog7776/WindowGrip`):** Native Windows desktop utility for precise window snapping, positioning, and multi-monitor management.
+- **TrickleCharge Infrastructure:** Self-hosted homelab stack running custom scoped registries, reverse proxies, and continuous delivery pipelines.
 
-### Research & Applied Systems
-- **VR Electrocution Experience & Hardware Interface (`pog7776/ElectrocutionVRExperience`):** Published university research investigating the psychological and behavioural impact of physical consequences (haptic shock collar feedback) in immersive VR, with custom Arduino/microcontroller hardware interfacing and Unity integration.
-- **Unity Devpacks Consolidation (`pog7776/Unity-Devpacks`):** Monorepo consolidation of custom internal gameplay systems, physics controllers, and editor tooling.
+### Research & Simulation Systems
+- **VR Electrocution Experience & Hardware Interface (`pog7776/ElectrocutionVRExperience`):** Published university research investigating the behavioural and psychological impact of physical consequences in virtual reality. Interfaced custom Arduino microcontroller shock feedback hardware with real-time Unity simulation.
+- **Procedural Voronoi World Generator (`pog7776/The-Art-of-Terra`):** 3D infinite procedural terrain generation utilizing GPU Voronoi algorithms, multi-biome distribution, and dynamic chunk streaming in Unity.
+- **Modular Vehicle Physics (`pog7776/ModularVehiclePhysics`):** Raycast suspension and vehicle dynamics engine built in C# for Unity.
+- **Screeps .NET Engine (`pog7776/ScreepsDotNet`):** High-performance C# framework for autonomous colony management and decision-making in the Screeps MMO.
+- **Alchemist (`pog7776/Alchemist`):** Procedural crafting and alchemy simulation system in C# / Unity.
+- **Unreal Engine 5 Action RPG:** C++ gameplay systems, animation state machines, and combat mechanics in Unreal Engine 5.
 
 ---
 
