@@ -1,11 +1,90 @@
-@media (max-width: 1000px) {
-
-    /*body {
-        background: yellow;
-    }*/
-
-    .info_button:hover {
-        animation: shadow 1s infinite;
+@media (max-width: 768px) {
+    .container {
+        position: relative;
+        top: unset;
+        left: unset;
+        transform: none;
+        width: 92%;
+        margin: 100px auto 40px auto;
+        padding: 10px;
     }
 
+    .nav_container {
+        position: fixed;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 8px 12px;
+        overflow-x: auto;
+        white-space: normal;
+    }
+
+    .navbar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+
+    .info_button {
+        padding: 6px 10px;
+        font-size: 0.85rem;
+    }
+
+    #ConsoleDisplay h1 {
+        font-size: 1.5rem;
+    }
+
+    /* Projects Page Mobile */
+    .project_list {
+        margin-top: 110px;
+        padding: 0 12px 60px 12px;
+    }
+
+    .project_entry {
+        flex-direction: column;
+        max-height: 280px;
+        padding: 16px;
+        margin-bottom: 25px;
+    }
+
+    .project_entry.is-expanded {
+        max-height: 3500px;
+    }
+
+    .project_left {
+        max-width: 100%;
+        flex: 1 1 100%;
+        padding-right: 0;
+    }
+
+    .project_right {
+        max-width: 100%;
+        flex: 1 1 100%;
+        align-items: center;
+        margin-top: 15px;
+    }
+
+    .preview_content {
+        text-align: center;
+        width: 100%;
+    }
+
+    .preview_content img {
+        height: 140px;
+        max-width: 100%;
+    }
+
+    .project_right .project_image {
+        max-width: 100%;
+    }
+
+    /* Contact & Quote Mobile */
+    table {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    table td {
+        display: block;
+        padding: 4px 0;
+    }
 }

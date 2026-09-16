@@ -1,6 +1,9 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <title>Projects</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projects - Jack Cooper</title>
         <link rel="canonical" href="https://jackcooper.dev/projects" />
         <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
         <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
@@ -8,10 +11,9 @@
         <link rel="stylesheet" href="style_sheets/projects.css">
         <link rel="stylesheet" href="style_sheets/mobile_style.css">
         <script type="text/javascript" src="selection.js"></script>
-        <script type="text/javascript" src="/javascript/projects.js"></script>
+        <script type="text/javascript" src="javascript/projects.js"></script>
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.js"></script>
         <base target="_blank">
-        <!--<meta http-equiv="Refresh" content="0; url='wip.html'" />-->
 
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-5RXK7JBGF6"></script>
@@ -35,79 +37,175 @@
         <div class="project_list">
             <h1 class="header" id="projects_header">[Projects]</h1>
 
+            <!-- DingOS -->
+            <div id="dingos" class="project_entry"
+                 onclick="expandProject(this.id)"
+                 onmouseover="typeWriter('selection', 'DingOS CLI')" onmouseleave="clear_selection('selection')">
+                <div class="project_left">
+                    <h2 class="header">> DingOS</h2>
+                    <h3>2024 - Present</h3>
+                    <p>
+                        An in-engine interactive terminal and runtime shell framework for Unity and C# game development.
+                    </p>
+                    <a href="https://github.com/Trickle-Charge/DingOS" target="_blank" class="info_button"> GitHub </a>
+                    <span class="expand_content">
+                        <br>
+                        <hr>
+                        <p>
+                            DingOS is an extensible in-game command line environment that enables rapid live debugging, variable inspection, custom commands, and cheat engines at runtime.
+                        </p>
+                        <p>
+                            Features a modular plugin architecture, syntax parsing, pipe redirection, and custom shell themes.
+                        </p>
+                    </span>
+                </div>
+                <div class="project_right">
+                    <span class="preview_content">
+                        <img src="/images/projects/unity_packages/packages_preview.png" alt="DingOS Preview">
+                    </span>
+                    <span class="expand_content"></span>
+                </div>
+            </div>
+
+            <!-- Unity Devpacks -->
             <div id="unity_packages" class="project_entry"
                  onclick="expandProject(this.id)"
                  onmouseover="typeWriter('selection', 'Unity Devpacks')" onmouseleave="clear_selection('selection')">
-                <div class="project_left" >
+                <div class="project_left">
                     <h2 class="header">> Unity Devpacks</h2>
                     <h3>2026</h3>
                     <p>
-                        A repository of systems I've created over the years.
+                        A consolidated library of modular tools, game architecture systems, and engine extensions.
                     </p>
-                    <a href="https://github.com/pog7776/Unity-Devpacks" target="_blank" class="info_button" id="devpack_link"> Github </a>
+                    <a href="https://github.com/pog7776/packages-unity" target="_blank" class="info_button" id="devpack_link"> GitHub </a>
                     <span class="expand_content">
                         <br>
                         <hr>
                         <p id="unity_packages_description">
-                            I love creating systems and tools in the Unity engine,
-                            but over the years my work had become scattered over multiple
-                            hard drives and repos I forget even exist.
+                            I love creating systems and tools in the Unity engine, but over the years my work had become scattered over multiple hard drives and repos.
                         </p>
                         <p>
-                            This repo is my attempt to finally consolidate all of my hard work in a clean and organized way.
+                            This repository consolidates custom editor extensions, math utilities, camera controllers, input abstractions, and UI helpers into clean UPM-compatible packages.
                         </p>
                     </span>
                 </div>
-
                 <div class="project_right">
                     <span class="preview_content">
                         <img src="/images/projects/unity_packages/packages_preview.png" alt="Unity Packages Preview">
                     </span>
+                    <span class="expand_content"></span>
+                </div>
+            </div>
+
+            <!-- WindowGrip -->
+            <div id="windowgrip" class="project_entry"
+                 onclick="expandProject(this.id)"
+                 onmouseover="typeWriter('selection', 'WindowGrip C++')" onmouseleave="clear_selection('selection')">
+                <div class="project_left">
+                    <h2 class="header">> WindowGrip</h2>
+                    <h3>2024</h3>
+                    <p>
+                        Intuitive, native desktop window interaction and manipulation utility written in C++.
+                    </p>
+                    <a href="https://github.com/pog7776/WindowGrip" target="_blank" class="info_button"> GitHub </a>
                     <span class="expand_content">
-<!--                        <img src="/images/projects/vr_elec/strap.jpg" alt="Electric collar strap" class="project_image" id="collar">-->
+                        <br>
+                        <hr>
+                        <p>
+                            WindowGrip hooks into native Windows OS windowing APIs to provide instant keyboard and mouse-driven window snapping, fluid drag controls, and multi-monitor management.
+                        </p>
+                    </span>
+                </div>
+                <div class="project_right">
+                    <span class="preview_content">
+                        <img src="/images/bracket_banner_dark.png" alt="WindowGrip Preview">
+                    </span>
+                    <span class="expand_content"></span>
+                </div>
+            </div>
+
+            <!-- Voronoi World Generation -->
+            <div id="voronoi_world" class="project_entry"
+                 onclick="expandProject(this.id)"
+                 onmouseover="typeWriter('selection', 'Voronoi Generator')" onmouseleave="clear_selection('selection')">
+                <div class="project_left">
+                    <h2 class="header">> Voronoi World Generation</h2>
+                    <h3>2023</h3>
+                    <p>
+                        Procedural world and texture generation system utilizing Voronoi diagrams and custom shaders in Unity.
+                    </p>
+                    <a href="https://github.com/pog7776/Voronoi-World-Generation" target="_blank" class="info_button"> GitHub </a>
+                    <span class="expand_content">
+                        <br>
+                        <hr>
+                        <p>
+                            Generates cellular noise patterns, organic biome boundaries, and heightmaps in real-time. Explores GPU-accelerated texture synthesis and procedural island generation.
+                        </p>
+                    </span>
+                </div>
+                <div class="project_right">
+                    <span class="preview_content">
+                        <img src="/images/projects/taot/vor1.png" alt="Voronoi Preview">
+                    </span>
+                    <span class="expand_content">
+                        <img src="/images/projects/taot/vor2.png" alt="Voronoi Map" class="project_image">
+                        <img src="/images/projects/taot/vor3.png" alt="Voronoi Biomes" class="project_image">
                     </span>
                 </div>
             </div>
 
+            <!-- Car Physics Tooling -->
+            <div id="car_physics" class="project_entry"
+                 onclick="expandProject(this.id)"
+                 onmouseover="typeWriter('selection', 'Car Physics Tooling')" onmouseleave="clear_selection('selection')">
+                <div class="project_left">
+                    <h2 class="header">> Car Physics & Dynamics Tooling</h2>
+                    <h3>2023</h3>
+                    <p>
+                        Custom vehicle physics framework, suspension simulation, and live telemetry tooling in Unity C#.
+                    </p>
+                    <a href="https://github.com/pog7776/CarPhysicsTooling" target="_blank" class="info_button"> GitHub </a>
+                    <span class="expand_content">
+                        <br>
+                        <hr>
+                        <p>
+                            A modular raycast and wheel-collider physics implementation simulating suspension spring/damper compression, Pacejka lateral tire friction, anti-roll bars, and real-time vehicle telemetry debugging.
+                        </p>
+                    </span>
+                </div>
+                <div class="project_right">
+                    <span class="preview_content">
+                        <img src="/images/bracket_banner_github.png" alt="Car Physics Preview">
+                    </span>
+                    <span class="expand_content"></span>
+                </div>
+            </div>
+
+            <!-- VR Electrocution Experience -->
             <div id="electric_vr" class="project_entry"
-            onclick="expandProject(this.id)"
-            onmouseover="typeWriter('selection', 'VR Electrocution Experience Research Paper')" onmouseleave="clear_selection('selection')">
-                <div class="project_left" >
+                 onclick="expandProject(this.id)"
+                 onmouseover="typeWriter('selection', 'VR Electrocution Paper')" onmouseleave="clear_selection('selection')">
+                <div class="project_left">
                     <h2 class="header">> VR Electrocution Experience Research Paper</h2>
                     <h3>2020</h3>
                     <p>
-                        This was a research paper exploring the impact real world consequences had on a players experience in VR.
+                        Research paper exploring the behavioral impact of real-world physical consequences in Virtual Reality.
                     </p>
                     <span class="expand_content">
                         <br>
                         <hr>
                         <h4>Abstract</h4>
                         <p id="vr_abstract">
-                            This paper explores the impact that high consequence
-                            feedback has on a player in VR, and the behavioural
-                            changes of the player while playing a game with and
-                            without the feedback. Virtual Reality being a highly
-                            immersive system, it is an appropriate format to test this
-                            kind of feedback and its effects. The paper outlines the
-                            process taken to develop a system to provide high
-                            consequence feedback, and interfacing that with a VR
-                            game developed to test the system. The work undertaken
-                            in this paper hopes to outline the effectiveness and
-                            implications consequences have on the experience of
-                            video games.
+                            This paper explores the impact that high consequence feedback has on a player in VR, and the behavioural changes of the player while playing a game with and without the feedback. Virtual Reality being a highly immersive system, it is an appropriate format to test this kind of feedback and its effects.
                         </p>
-                        <a href="/Files/Exploring the impact of real-world consequence on a player's experience in Virtual Reality - Jack Cooper.pdf" target="_blank" class="info_button" id="paper"> Download Paper </a>
+                        <a href="/Files/Exploring the impact of real-world consequence on a player's experience in Virtual Reality - Jack Cooper.pdf" target="_blank" class="info_button"> Download Paper </a>
+                        <a href="https://github.com/pog7776/ElectrocutionVRExperience" target="_blank" class="info_button"> Source Code </a>
                         <hr>
                         <p>
-                            The project was built in Unity 3D, and was built to be compatible with Windows Mixed reality.
+                            Built in Unity 3D for Windows Mixed Reality with a custom microcontroller circuit controlling hardware shock feedback.
                         </p>
-                        <p>
-                            The source was a prototype built for an old version of Unity and would require the custom shock collar hardware.
-                        </p>
-                        <a href="https://github.com/pog7776/ElectrocutionVRExperience" target="_blank" class="info_button" id="paper"> Source Code </a>
                     </span>
                 </div>
-
                 <div class="project_right">
                     <span class="preview_content">
                         <img src="/images/projects/vr_elec/board_preview.png" alt="VR Preview">
@@ -121,71 +219,94 @@
                 </div>
             </div>
 
-            <div id="alchemist" class="project_entry" class="project_entry"
-            onclick="//expandProject(this.id)"
-            onmouseover="typeWriter('selection', 'The Alchemist')" onmouseleave="clear_selection('selection')">
-                <div class="project_left" >
-                    <h2 class="header">> The Alchemist</h2>
-                    <h3>2019-2021</h3>
+            <!-- Screeps DotNet -->
+            <div id="screeps_dotnet" class="project_entry"
+                 onclick="expandProject(this.id)"
+                 onmouseover="typeWriter('selection', 'Screeps DotNet AI')" onmouseleave="clear_selection('selection')">
+                <div class="project_left">
+                    <h2 class="header">> Screeps DotNet Autonomous Engine</h2>
+                    <h3>2023</h3>
                     <p>
-                        <!-- The alchemist was game :] -->
-                        Coming soon!
+                        Autonomous real-time strategy MMO game AI written in C# compiled to WebAssembly.
                     </p>
+                    <a href="https://github.com/pog7776/Screeps_dingus_dotnet" target="_blank" class="info_button"> GitHub </a>
+                    <span class="expand_content">
+                        <br>
+                        <hr>
+                        <p>
+                            Implements hierarchical task delegation, automatic colony expansion, mineral harvesting pipelines, dynamic defensive towers, and path cost caching.
+                        </p>
+                    </span>
                 </div>
+                <div class="project_right">
+                    <span class="preview_content">
+                        <img src="/images/bracket_banner_github_dark.png" alt="Screeps Preview">
+                    </span>
+                    <span class="expand_content"></span>
+                </div>
+            </div>
 
+            <!-- The Alchemist -->
+            <div id="alchemist" class="project_entry"
+                 onclick="expandProject(this.id)"
+                 onmouseover="typeWriter('selection', 'The Alchemist')" onmouseleave="clear_selection('selection')">
+                <div class="project_left">
+                    <h2 class="header">> The Alchemist</h2>
+                    <h3>2019 - 2021</h3>
+                    <p>
+                        An atmospheric action-exploration game with procedural magic crafting and custom rendering pipelines.
+                    </p>
+                    <span class="expand_content">
+                        <br>
+                        <hr>
+                        <p>
+                            Explored elemental spell mixing combinations, dynamic environment destruction, and custom vertex shaders in Unity.
+                        </p>
+                    </span>
+                </div>
                 <div class="project_right">
                     <span class="preview_content">
                         <img src="/images/projects/taot/taot_preview.png" alt="TAOT Preview">
                     </span>
-                    <span class="expand_content">
-                        <!-- Right Content-->
-                    </span>
+                    <span class="expand_content"></span>
                 </div>
             </div>
 
-            <div id="unreal_game" class="project_entry" class="project_entry"
-            onclick="//expandProject(this.id)"
-            onmouseover="typeWriter('selection', 'Unreal Engine 5 Project')" onmouseleave="clear_selection('selection')">
-                <div class="project_left" >
-                    <h2 class="header">> Unreal Engine 5 Project</h2>
+            <!-- Unreal Engine 5 Project -->
+            <div id="unreal_game" class="project_entry"
+                 onclick="expandProject(this.id)"
+                 onmouseover="typeWriter('selection', 'UE5 Project')" onmouseleave="clear_selection('selection')">
+                <div class="project_left">
+                    <h2 class="header">> Unreal Engine 5 Systems Exploration</h2>
                     <h3>2022</h3>
                     <p>
-                        <!-- Size is cool -->
-                        Coming soon!
+                        Technical prototype testing Unreal Engine 5 Lumen lighting, Nanite geometry, and C++ gameplay systems.
                     </p>
                 </div>
-
                 <div class="project_right">
                     <span class="preview_content">
                         <img src="/images/projects/ue5/ue5_preview.png" alt="UE5 Preview">
                     </span>
-                    <span class="expand_content">
-                        <!-- Right Content-->
-                    </span>
+                    <span class="expand_content"></span>
                 </div>
             </div>
 
-            <div id="stupid_bot" class="project_entry" class="project_entry"
-            onclick="//expandProject(this.id)"
-            onmouseover="typeWriter('selection', 'Discord Bot')" onmouseleave="clear_selection('selection')">
-                <div class="project_left" >
-                    <h2 class="header">> Funny little Discord bot</h2>
+            <!-- Discord Bot -->
+            <div id="stupid_bot" class="project_entry"
+                 onclick="expandProject(this.id)"
+                 onmouseover="typeWriter('selection', 'Discord Bot')" onmouseleave="clear_selection('selection')">
+                <div class="project_left">
+                    <h2 class="header">> Custom Community Discord Bot</h2>
                     <h3>2021</h3>
                     <p>
-                        Coming soon!
-                    </p>
-                    <p>
-                        Stupid bot
+                        Multi-purpose Python Discord bot with audio streaming, custom commands, and interactive minigames.
                     </p>
                 </div>
-
                 <div class="project_right">
                     <span class="preview_content">
                         <img src="/images/projects/stupid_bot/stupidbot_preview.png" alt="Discord Bot Preview">
                     </span>
-                    <span class="expand_content">
-                        <!-- Right Content-->
-                    </span>
+                    <span class="expand_content"></span>
                 </div>
             </div>
 
