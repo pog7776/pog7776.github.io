@@ -27,8 +27,8 @@
 }
 
 .nav_cursor {
-    background-color: rgb(51, 255, 0);
-    color: rgb(51, 255, 0);
+    background-color: var(--tc-accent-color, rgb(51, 255, 0));
+    color: var(--tc-accent-color, rgb(51, 255, 0));
     animation: cursor_blink 1s infinite;
     display: inline-block;
 }
